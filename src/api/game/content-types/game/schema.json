@@ -4,20 +4,34 @@
   "info": {
     "singularName": "game",
     "pluralName": "games",
-    "displayName": "Games"
+    "displayName": "Games",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "Name": {
-      "type": "string"
+    "name": {
+      "type": "string",
+      "required": true
     },
-    "Rating": {
-      "type": "integer"
+    "rating": {
+      "type": "integer",
+      "required": true
     },
-    "Recomend": {
+    "recomend": {
+      "type": "boolean"
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::category.category"
+    },
+    "popular": {
+      "type": "boolean"
+    },
+    "currentFavourite": {
       "type": "boolean"
     }
   }
