@@ -13,11 +13,16 @@
   "pluginOptions": {},
   "attributes": {
     "name": {
-      "type": "string",
-      "required": true
+      "type": "string"
     },
-    "featured": {
-      "type": "boolean"
+    "games": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::game.game",
+      "mappedBy": "categories"
+    },
+    "colour": {
+      "type": "string"
     }
   }
 }
