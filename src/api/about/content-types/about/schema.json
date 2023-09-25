@@ -42,6 +42,9 @@
     },
     "skills": {
       "type": "json"
+    },
+    "background_text": {
+      "type": "text"
     }
   }
 }
