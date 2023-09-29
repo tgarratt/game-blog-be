@@ -23,9 +23,6 @@
         "audios"
       ]
     },
-    "intro_text": {
-      "type": "text"
-    },
     "skills_picture": {
       "type": "media",
       "multiple": false,
@@ -43,18 +40,22 @@
     "skills": {
       "type": "json"
     },
-    "background_text": {
-      "type": "text"
-    },
     "background_picture": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "intro_text": {
+      "type": "richtext"
+    },
+    "background_text": {
+      "type": "richtext"
     }
   }
 }

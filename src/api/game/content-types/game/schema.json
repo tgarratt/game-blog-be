@@ -65,7 +65,7 @@
       "type": "string"
     },
     "closing_statement": {
-      "type": "text"
+      "type": "richtext"
     }
   }
 }
